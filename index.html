@@ -216,21 +216,21 @@
           <p></p>
         </div>
         <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <div class="textwidget custom-html-widget"><script type="text/javascript">
-              width='500';		// the width of the embedded map in pixels or percentage
-              height='450';		// the height of the embedded map in pixels or percentage
-              border='1';		// the width of the border around the map (zero means no border)
-              shownames='false';	// to display ship names on the map (true or false)
-              latitude='37.4460';	// the latitude of the center of the map, in decimal degrees
-              longitude='24.9467';	// the longitude of the center of the map, in decimal degrees
-              zoom='10';		// the zoom level of the map (values between 2 and 17)
-              maptype='0';		// use 0 for Normal Map, 1 for Satellite
-              trackvessel='244002024';	// MMSI of a vessel (note: vessel will be displayed only if within range of the system) - overrides "zoom" option
-              fleet='';		// the registered email address of a user-defined fleet (user's default fleet is used)
-            </script>
-            <script type="text/javascript" src="//www.marinetraffic.com/js/embed.js"></script><iframe name="marinetraffic" id="marinetraffic" width="500" height="450" scrolling="no" frameborder="1" src="https://www.marinetraffic.com/en/ais/embed/zoom:10/centery:37.4460/centerx:24.9467/maptype:0/shownames:false/mmsi:244002024/shipid:0/fleet:/fleet_id:/vtypes:/showmenu:/remember:false">Browser does not support embedded objects.<br/>Visit directly <a href="http://www.marinetraffic.com/">www.marinetraffic.com</a></iframe>
-            </div>
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">            
+              <script type="text/javascript">
+                  // Map appearance
+                  var width="100%";         // width in pixels or percentage
+                  var height="100%";         // height in pixels
+                  var latitude="0.00";      // center latitude (decimal degrees)
+                  var longitude="0.00";     // center longitude (decimal degrees)
+                  var zoom="3";             // initial zoom (between 3 and 18)
+                  var names=false;          // always show ship names (defaults to false)
+
+                  // Single ship tracking
+                  var mmsi="244002024";     // display latest position (by MMSI)                  
+                  var show_track=true;     // display track line (last 24 hours)
+              </script>
+              <script type="text/javascript" src="https://www.vesselfinder.com/aismap.js"></script>            
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">            
             <p>Our boat <strong>Outward Leg</strong> is sailing under a Dutch flag with the following identification</p>
